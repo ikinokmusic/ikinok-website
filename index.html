@@ -691,7 +691,7 @@
         </header>
 
         <section class="section video-section">
-            <h2 data-en="Latest Release" data-tr="Son Yayın">Son Yayın</h2>
+            <h2 data-en="Latest Release" data-tr="Son Yayın">En Yeni Şarkımız</h2>
             <div class="video-container">
                 <!-- REPLACE 'VIDEO_ID' with your YouTube video ID -->
                 <!-- To get Video ID: From https://www.youtube.com/watch?v=VIDEO_ID -->
@@ -848,6 +848,11 @@
 
             if (!newsLoaded) {
                 newsFeed.innerHTML = `
+                    <div class="news-item">
+                        <div class="news-date" data-en="November 2025" data-tr="Kasım 2025">${currentLang === 'tr' ? 'Kasım 2025' : 'November 2025'}</div>
+                        <h3 class="news-title" data-en="Welcome!" data-tr="Hoş Geldiniz!">${currentLang === 'tr' ? 'Yeni Şarkımız Yayında!' : 'New Single Released!'}</h3>
+                        <p class="news-description" data-en="New Release!" data-tr="Yeni Şarkı">${currentLang === 'tr' ? 'https://open.spotify.com/track/6JYKDhOpvfiDcBF04aekFe?si=0bce3b46079040dc' : 'https://open.spotify.com/track/6JYKDhOpvfiDcBF04aekFe?si=0bce3b46079040dc'}</p>
+                    </div>
                     <div class="news-item">
                         <div class="news-date" data-en="October 2025" data-tr="Ekim 2025">${currentLang === 'tr' ? 'Ekim 2025' : 'October 2025'}</div>
                         <h3 class="news-title" data-en="Welcome!" data-tr="Hoş Geldiniz!">${currentLang === 'tr' ? 'Hoş Geldiniz!' : 'Welcome!'}</h3>
